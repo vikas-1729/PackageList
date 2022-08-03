@@ -1,9 +1,9 @@
-import SearchForm from "./SearchForm";
-
+// import SearchForm from "./SearchForm";
+import ProductList from "./ProductList";
 const App = () => {
   return (
     <div>
-      <SearchForm />
+      <ProductList />
     </div>
   );
 };
