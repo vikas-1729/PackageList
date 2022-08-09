@@ -1,9 +1,10 @@
-// import SearchForm from "./SearchForm";
-import ProductList from "./ProductList";
+import RandomImage from "./RandomImage";
+import Ticker from "./Ticker";
 const App = () => {
   return (
     <div>
-      <ProductList />
+      <Ticker />
+      <RandomImage />
     </div>
   );
 };

@@ -1,10 +1,10 @@
 import { v4 as uuidv4 } from "uuid";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import Product from "./Product";
 import AddProduct from "./AddProduct";
 
-ProductList = (props) => {
+ProductList = () => {
   const [productArray, setProductList] = useState([
     { name: "laptop", quantity: 10, id: uuidv4() },
     { name: "phone", quantity: 100, id: uuidv4() },

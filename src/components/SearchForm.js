@@ -1,7 +1,9 @@
 import { useState } from "react";
+import useUserInput from "./useUserInput";
 //hhoks -->
 const SearchForm = () => {
   const [name, setName] = useState("vikas");
+  const nameInput = useUserInput("vikas");
   if (name === "vikas") {
     console.log("in");
     var [surname, setSurname] = useState("singh");
@@ -17,10 +19,7 @@ const SearchForm = () => {
           type="text"
           name="name"
           id="name"
-          value={name}
-          onChange={(e) => {
-            setName(e.target.value);
-          }}
+          {...nameInput}
           placeholder="Write your name !!"
         />
       </form>
