@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
-import { imageReducer } from "./imageReducer";
-import { tickerReducer } from "./tickerReducer";
+import { SearchReducer } from "./SearchReducer";
+import { FavouritePackagesReducer } from "./FavouritePackagesReducer";
 
 export default combineReducers({
-  image: imageReducer,
-  ticker: tickerReducer,
+  searchData: SearchReducer,
+  favouritePackage: FavouritePackagesReducer,
 });
